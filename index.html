@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CivCraftL0L</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	
+	
+	
+</head>
+<body>
+	<section class="loginform cf">
+		<h1>Welcome to CivCraft!</h1>		
+		<form name="login" id="login" method="post" accept-charset="utf-8">
+			<ul>
+				<div id="response"><pre></pre></div>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" name="usermail" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="password">Password</label>
+					<input type="password" name="password" placeholder="password" required></li>
+				<li>
+					<input type="submit" value="Login">
+				</li>				
+				</ul>
+				<br>			
+		</form>
+		<a href="signup.html">Sign Up</a>
+	</section>
+	<br>
+	
+	
+	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
+<script>
+
+    (function($){
+        function processForm( e ){
+            $.ajax({
+                url: 'login.php',
+                dataType: 'text',
+                type: 'post',
+                contentType: 'application/x-www-form-urlencoded',
+                data: $(this).serialize(),
+                success: function( data, textStatus, jQxhr ){
+                	
+                	if(data.toString().indexOf("incorrect") > -1){
+                    	$('#response pre').html( data );
+                    }else{
+                    	window.location = "main.php";
+                    }
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+
+            e.preventDefault();
+        }
+
+        $('#login').submit( processForm );
+    })(jQuery);
+</script>
+	
+</body>
+</html>

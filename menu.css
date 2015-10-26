@@ -1,0 +1,107 @@
+/* Begin CSS Popout Menu */
+
+
+#menuh-container	{
+	position:  relative;
+	margin: 0 auto;
+	width:880px;
+	}
+
+#menuh	{
+	font-size: 90%;
+	font-family: helvetica, "Trebuchet MS",arial, sans-serif;
+	width:100%;
+	float:left;
+	margin: 0px 0px 0px 10px;
+	color: #333;
+	background: black;
+	border-bottom : 0px solid gray;
+	}
+		
+#menuh a {
+	text-align: center;
+	letter-spacing: 3px;
+	display:block;
+	height:22px;
+	border: 0px solid #eee;
+	white-space:nowrap;
+	margin:0;
+	padding: 0.5em 0.5em 0.5em 0.2em;
+	}
+	
+#menuh a, #menuh a:visited	/* menu at rest */
+	{
+	color: #fff;
+	background: black;
+	text-decoration:none;
+	}
+	
+#menuh a:hover	/* menu at mouse-over  */
+	{
+	color: #fff;
+	background: #7E7E7E;
+	}	
+			
+#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */
+	{text-transform: uppercase;
+	background-image: url(images/navdown_white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	}
+	
+#menuh a.parent, #menuh a.parent:hover 	/* attaches side-arrow to all parents */
+	{
+	background-image: url(images/nav_white.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	}
+
+#menuh ul
+	{
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	width:140px;	/* width of all menu boxes */
+	}
+
+#menuh li
+	{
+	position:relative;
+	}
+
+#menuh ul ul
+	{
+	position:absolute;
+	z-index:500;
+	top:auto;
+	display:none;
+	padding: 1em;
+	margin:-1em 0 0 -1em;
+	}
+
+#menuh ul ul ul
+	{
+	top:0;
+	left:100%;
+	}
+
+div#menuh li:hover
+	{
+	cursor:pointer;
+	z-index:100;
+	}
+
+div#menuh li:hover ul ul,
+div#menuh li li:hover ul ul,
+div#menuh li li li:hover ul ul,
+div#menuh li li li li:hover ul ul
+{display:none;}
+
+div#menuh li:hover ul,
+div#menuh li li:hover ul,
+div#menuh li li li:hover ul,
+div#menuh li li li li:hover ul
+{display:block;}
+
+/* End CSS Popout Menu */

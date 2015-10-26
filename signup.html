@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up for CivCraft!</title>
+    <link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<section class="signupform cf">
+	<h1>Sign up for CIVCRAFT</h1>
+	<form name="signup" id="signup" method="post" accept-charset="utf-8">
+    		<ul>
+				<div id="response">
+    			<pre></pre>
+				</div>
+				<li>
+					<label for="usermail">Email</label>
+					<input type="email" maxlength="40" name="usermail" placeholder="yourname@email.com" id="email" required>
+				</li>
+				<br>
+				<li>
+					<label for="username">Username</label>
+					<input type="text" maxlength="15" name="username" placeholder="username" id="username" required>
+				</li>
+				<br>
+				
+				<li>
+					<label for="password">Password</label>
+					<input type="password" maxlength="15" name="password" id="password" placeholder="password" required>
+				</li>
+				<br>
+								
+				<li>
+					<label for="password_confirm">Password Repeat</label>
+					<input name="password_confirm" maxlength="15" required type="password" id="password_confirm" oninput="checkPass(this)"  placeholder="password repeat"/>
+				</li>
+				<br>
+				
+				<li>
+					<input type="submit" value="Sign Up">
+				</li>
+			</ul>
+	</form>
+</section>
+
+<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
+<script>
+
+	function checkPass(input) {
+						if (input.value != document.getElementById('password').value) {
+							input.setCustomValidity('Password Must be Matching.');
+						} else {
+						// input is valid -- reset the error message
+							input.setCustomValidity('');
+						}	
+					}
+
+    (function($){
+        function processForm( e ){
+            $.ajax({
+                url: 'signup.php',
+                dataType: 'text',
+                type: 'post',
+                contentType: 'application/x-www-form-urlencoded',
+                data: $(this).serialize(),
+                success: function( data, textStatus, jQxhr ){
+                    $('#response pre').html( data );
+                },
+                error: function( jqXhr, textStatus, errorThrown ){
+                    console.log( errorThrown );
+                }
+            });
+
+            e.preventDefault();
+        }
+
+        $('#signup').submit( processForm );
+    })(jQuery);
+</script>
+</body>
+</html>

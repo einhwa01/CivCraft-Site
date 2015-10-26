@@ -1,0 +1,356 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: 76% helvetica, verdana, "Trebuchet MS", tahoma, arial, sans-serif;
+	line-height: 2em;
+	background: white;
+	color: #333;
+	background-position: 50% 0;
+}
+/*WRAP*/
+#container {
+	width: 780px;
+	margin: 0 auto;
+	color: #333;
+}
+/*TOP BAR*/
+#top {
+	margin: 0;
+	padding: 0;
+}
+#top h2 {
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 5px;
+	font-size: 90%;
+	padding: 8px 0;
+	margin: 0;
+	background: white;
+	color: black;
+}
+/*BANNER*/
+#banner {
+	width: 780px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 30px;
+	background: white;
+	color: #333;
+}
+#banner h1 {
+	height: 10px;
+	font-family: georgia, sans-serif;
+	text-align: center;
+	text-transform: none;
+	letter-spacing: 5px;
+	font-size: 175%;
+	padding: 0px;
+	margin: 0;
+	background: transparent;
+	color: #aaa;
+}
+/*MAIN CONTENT*/
+#content {
+	float: right;
+	width: 580px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0 5px 20px 5px;
+	border-radius: 5px;
+	box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*LEFT SIDEBAR*/
+#sidebar {
+	float: left;
+	width: 150px;
+	margin: 0;
+	padding: 0 5px 20px 10px;
+}
+/*FOOTER*/
+#footer {
+	clear: both;
+	font-size: 0.9em;
+	color: #fff;
+	background: black;
+	border-top: 1px solid #eee;
+	margin: 0;
+	text-align: center;
+	padding-left: 10px;
+}
+/*TYPOGRAPHY*/
+h3 {
+	font: 130% verdana, "Trebuchet MS", arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #333;
+	background: inherit;
+	margin: 30px 0 10px 5px;
+	padding: 0;
+}
+h4 {
+	font: 100% arial, "Trebuchet MS", verdana, sans-serif;
+	color: green;
+	background: inherit;
+	margin: 5px 0 5px 10px;
+	padding: 0;
+}
+p {
+	margin: 10px;
+}
+blockquote {
+	font-weight: bold;
+	font-style: italic;
+	color: #b29b35;
+}
+/*SCROLLBAR*/
+div.scroll {
+	overflow: auto;
+	height: 11em;
+	width: 500px;
+	padding: 5px;
+	border: 1px solid #eee;
+	margin: 20px 0 20px 15px;
+	background: inherit;
+	color: #555;
+	font-size: 90%;
+}
+/*SIDEBAR NAVIGATION*/
+#sidebar ul {
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+#sidebar ul li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+#sidebar ul li a {
+	display: block;
+	color: white;
+	background: gray;
+	text-decoration: none;
+	margin: 0 0 1px 0;
+	padding: 5px 0px 5px 20px;
+	border-bottom: 1px solid #c0c0c0;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+#sidebar ul li a:hover {
+	text-decoration: none;
+	background: #ece5ec;
+	color: #00750a;
+}
+/*LINK PROPERTIES*/
+#content a:link, #content a:visited, #banner a:link, #banner a:visited {
+	color: gray;
+	background: inherit;
+	text-decoration: none;
+}
+#content a:hover, #banner a:hover {
+	color: #00750a;
+	background: inherit;
+	text-decoration: none;
+}
+#footer a:link, a:visited, #top a:link, a:visited {
+	color: #aaa;
+	background: inherit;
+	text-decoration: none;
+}
+#footer a:hover, #top a:hover {
+	color: #fff;
+	background: inherit;
+	text-decoration: none;
+}
+a img {
+	border: 0;
+}
+
+iframe {
+	margin-left: -25px;
+	margin-top: 5px;padding 5px;
+	float: left;
+}
+
+.main-frm {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	background: #FFF;
+	padding: 20px 30px 20px 30px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #888;
+	text-shadow: 1px 1px 1px #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.main-frm input[type="text"], .main-frm input[type="email"], .main-frm textarea, .main-frm select {
+	border: 1px solid #CCC;
+	color: #888;
+	height: 20px;
+	line-height: 15px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 5px 0px 5px 5px;
+	width: 70%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.main-frm select {
+	background: #FFF url('down-arrow.png') no-repeat right;
+	background: #FFF url('down-arrow.png') no-repeat right;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 72%;
+	height: 35px;
+	line-height: 15px;
+}
+.main-frm textarea {
+	height: 100px;
+	padding: 5px 0px 0px 5px;
+	width: 70%;
+}
+
+.main-frm .submit {
+	background: black;
+	border: 1px solid #CCC;
+	padding: 10px 25px 10px 25px;
+	color: white;
+	border-radius: 4px;
+	margin-left: 25%;
+}
+.main-frm .submit:hover {
+	color: #333;
+	background-color: #EBEBEB;
+	border-color: #ADADAD;
+}
+
+.tg {
+	border-collapse: collapse;
+	border-radius: 4px;
+	border-spacing: 0;
+	border-color: gray;
+	padding: 0px;
+	margin: 20px;
+	box-shadow: 5px 0px 2.5px 0px rgba(0, 0, 0, 0.1), inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.tg td {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+	text-align: center;
+	border-color: gray;
+	color: #333;
+	background-color: #ccc;
+}
+.tg td:last-child {
+	padding-bottom: 5px;
+	border-radius: 0 0 6px 0;
+}
+.tg td:first-child {
+	padding-bottom: 5px;
+	border-radius: 0 0 0 6px;
+}
+.tg td:only-child {
+	padding-bottom: 5px;
+	border-radius: 0 0 6px 6px;
+}
+.tg th {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	width: 100px;
+	font-weight: bold;
+	padding: 10px 5px 0px 5px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: gray;
+	color: black;
+	background-color: gray;
+	background: -webkit-linear-gradient(gray, #ccc); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(gray, #ccc); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(gray, #ccc); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(gray, #ccc); /* Standard syntax */
+}
+.tg .tophead:first-child {
+	border-radius: 6px 0 0 0;
+}
+.tg .tophead:last-child {
+	border-radius: 0 6px 0 0;
+}
+.tg .tophead:only-child {
+	border-radius: 6px 6px 0 0;
+}
+.tg .tophead {
+	background-color: black;
+	background: -webkit-linear-gradient(black, gray); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(black, gray); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(black, gray); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(black, gray); /* Standard syntax */
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 0px;
+	overflow: hidden;
+	word-break: normal;
+	border-color: gray;
+	color: white;
+}
+
+/*Class for a small text input */
+label {
+	float: left;
+	font-weight: bold;
+	color: #999;
+	
+	
+	margin-right: 5px;
+}
+
+span{
+	font-weight: bold;
+}
+#message{
+	text-align: center;
+}
+.main-frm input[type="number"]{
+	border: 1px solid #CCC;
+	color: #888;
+	height: 10px;
+	line-height: 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	outline: 0 none;
+	padding: 5px 0px 5px 5px;
+	width: 70px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	float: right;
+}
+
+
+
